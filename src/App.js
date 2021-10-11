@@ -52,26 +52,22 @@ function App() {
             <p className="regular-text">
               {'<Input helperText="someInterestingText" />'}
             </p>
-
             <Input helperText="Some Interesting Text" />
           </div>
           <div className="input-container">
             <p className="regular-text">
-              {'<Input helperText="someInterestingText" />'}
+              {'<Input helperText="someInterestingText" error />'}
             </p>
-
             <Input helperText="Some Interesting Text" error />
           </div>
         </div>
         <div className="row">
           <div className="input-container">
-            <p className="regular-text">{'<Input size="sm" />'}</p>
-
+            <p className="regular-text">{'<Input startIcon />'}</p>
             <Input startIcon="phone" />
           </div>
           <div className="input-container">
-            <p className="regular-text">{'<Input size="md" />'}</p>
-
+            <p className="regular-text">{' <Input endIcon />'}</p>
             <Input endIcon="lock" />
           </div>
         </div>
@@ -96,14 +92,14 @@ function App() {
         </div>
         <div className="row wide-lg">
           <div className="input-container">
-            <p className="regular-text">{'<Input size="sm" />'}</p>
+            <p className="regular-text">{'<Input fullWidth />'}</p>
 
             <Input fullWidth />
           </div>
         </div>
         <div className="row">
           <div className="input-container">
-            <p className="regular-text">{'<Input size="sm" />'}</p>
+            <p className="regular-text">{'<Input multiline row=”4” />'}</p>
             <Input multiline rows="4" />
           </div>
         </div>

@@ -19,7 +19,7 @@ label {
   font-family: 'Noto Sans JP', sans-serif;
   font-size: 0.75rem;
   position: absolute;
-  bottom: 60px;
+  top: -20px;
   left: 0;
 }
 
