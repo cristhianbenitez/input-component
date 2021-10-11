@@ -11,6 +11,8 @@ input:hover, input:focus {
 label {
   font-family: 'Noto Sans JP', sans-serif;
   font-size: 0.75rem;
+  position: absolute;
+  top: -18px;
 }
 
 .input-element {
@@ -23,6 +25,8 @@ label {
   width: -moz-fit-content;
   width: fit-content;
   margin-top: 0.25em;
+  padding-top: 4em;
+  position: relative;
   font-family: 'Noto Sans JP', sans-serif;
 }
 
@@ -32,6 +36,7 @@ label {
 
 .input-element:focus-within {
   border-color: #2962ff;
+  color: #2962ff;
 }
 
 .error {
@@ -45,6 +50,7 @@ label {
 
 .error:focus-within {
   border-color: #d32f2f;
+  color: #d32f2f;
 }
 
 .error:focus-within + label {
@@ -72,5 +78,9 @@ label {
 
 .sm {
   padding: 0.5em;
+}
+
+.fullWidth {
+  width: 100%;
 }
 /*# sourceMappingURL=input.css.map */

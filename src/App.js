@@ -66,6 +66,13 @@ function App() {
             <Input size="md" />
           </div>
         </div>
+        <div className="row wide-lg">
+          <div className="input-container">
+            <p className="regular-text">{'<Input size="sm" />'}</p>
+
+            <Input fullWidth />
+          </div>
+        </div>
       </div>
     </div>
   );
