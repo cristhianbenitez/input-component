@@ -1,0 +1,41 @@
+input {
+  border: none;
+  font-family: 'Noto Sans JP', sans-serif;
+  &:hover,
+  &:focus {
+    outline: none;
+  }
+}
+label {
+  font-family: 'Noto Sans JP', sans-serif;
+  font-size: 0.75rem;
+}
+label:hover {
+  color: #2962ff;
+}
+.input-element {
+  border: 1px solid #828282;
+  box-sizing: border-box;
+  padding: 1em;
+  border-radius: 8px;
+  width: fit-content;
+  margin-top: 0.25em;
+  font-family: 'Noto Sans JP', sans-serif;
+  &:hover {
+    border-color: #333333;
+  }
+  &:focus-within {
+    border-color: #2962ff;
+  }
+}
+
+.error {
+  border-color: #d32f2f;
+  color: #d32f2f;
+  &:hover {
+    border-color: #333333;
+  }
+  &:focus-within {
+    border-color: #d32f2f;
+  }
+}

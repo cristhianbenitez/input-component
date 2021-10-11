@@ -1,23 +1,46 @@
-import logo from './logo.svg';
 import './App.css';
+import Input from './Components/Input/Input';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className="wrapper">
+        <h1 className="title">Inputs</h1>
+        <div className="row">
+          <div className="input-container">
+            <p className="regular-text">{'<Input />'}</p>
+
+            <Input />
+          </div>
+          <div className="input-container">
+            <p className="grey-text">{'&:hover'}</p>
+
+            <Input />
+          </div>
+          <div className="input-container">
+            <p className="grey-text">{'&:focus'}</p>
+
+            <Input />
+          </div>
+        </div>
+        <div className="row">
+          <div className="input-container">
+            <p className="regular-text">{'<Input error />'}</p>
+
+            <Input error />
+          </div>
+          <div className="input-container">
+            <p className="grey-text">{'&:hover'}</p>
+
+            <Input />
+          </div>
+          <div className="input-container">
+            <p className="grey-text">{'&:focus'}</p>
+
+            <Input error />
+          </div>
+        </div>
+      </div>
     </div>
   );
 }

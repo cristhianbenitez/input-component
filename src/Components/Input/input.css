@@ -1,0 +1,52 @@
+input {
+  border: none;
+  font-family: 'Noto Sans JP', sans-serif;
+}
+
+input:hover, input:focus {
+  outline: none;
+}
+
+label {
+  font-family: 'Noto Sans JP', sans-serif;
+  font-size: 0.75rem;
+}
+
+label:hover {
+  color: #2962ff;
+}
+
+.input-element {
+  border: 1px solid #828282;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 1em;
+  border-radius: 8px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-top: 0.25em;
+  font-family: 'Noto Sans JP', sans-serif;
+}
+
+.input-element:hover {
+  border-color: #333333;
+}
+
+.input-element:focus-within {
+  border-color: #2962ff;
+}
+
+.error {
+  border-color: #d32f2f;
+  color: #d32f2f;
+}
+
+.error:hover {
+  border-color: #333333;
+}
+
+.error:focus-within {
+  border-color: #d32f2f;
+}
+/*# sourceMappingURL=input.css.map */
