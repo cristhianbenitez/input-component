@@ -3,8 +3,8 @@ import './input.css';
 
 const Input = ({
   error = false,
-  size = 'md',
   disabled = false,
+  size = 'md',
   ...restProps
 }) => {
   const checkError = error ? 'error' : '';
@@ -12,7 +12,7 @@ const Input = ({
   return (
     <label>
       Label
-      <div className={`input-element ${checkError} ${size} ${checkDisabled} `}>
+      <div className={`input-element ${checkError} ${checkDisabled} ${size} `}>
         <input
           type="text"
           placeholder={'Placeholder'}

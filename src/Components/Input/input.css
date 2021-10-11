@@ -65,4 +65,12 @@ label {
   outline: none;
   background-color: #f2f2f2;
 }
+
+.md {
+  padding: 1em;
+}
+
+.sm {
+  padding: 0.5em;
+}
 /*# sourceMappingURL=input.css.map */
