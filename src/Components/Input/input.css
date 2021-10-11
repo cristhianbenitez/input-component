@@ -1,18 +1,26 @@
-input {
+input,
+textarea {
   border: none;
   font-family: 'Noto Sans JP', sans-serif;
   text-transform: capitalize;
 }
 
-input:hover, input:focus {
+input:hover, input:focus,
+textarea:hover,
+textarea:focus {
   outline: none;
+}
+
+textarea {
+  resize: none;
 }
 
 label {
   font-family: 'Noto Sans JP', sans-serif;
   font-size: 0.75rem;
   position: absolute;
-  top: -18px;
+  bottom: 60px;
+  left: 0;
 }
 
 .input-element {
@@ -24,7 +32,7 @@ label {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
-  margin-top: 0.25em;
+  margin-top: 0.85em;
   padding-top: 4em;
   position: relative;
   font-family: 'Noto Sans JP', sans-serif;
@@ -72,6 +80,13 @@ label {
   background-color: #f2f2f2;
 }
 
+.helper-text {
+  position: absolute;
+  font-size: 0.515em;
+  top: 51px;
+  left: 0;
+}
+
 .md {
   padding: 1em;
 }
@@ -80,7 +95,42 @@ label {
   padding: 0.5em;
 }
 
+.start_Icon,
+.end-Icon {
+  color: #828282;
+  position: absolute;
+  font-size: 20px;
+}
+
+.start_Icon {
+  left: 8px;
+}
+
+.start_Icon ~ input {
+  margin-left: 1.25em;
+  margin-right: -1em;
+}
+
+.end-Icon {
+  right: 8px;
+  color: #828282;
+}
+
 .fullWidth {
   width: 100%;
+}
+
+.active-error {
+  border-color: #333333;
+  color: #333333;
+}
+
+.hover-default {
+  border-color: #333333;
+}
+
+.focus-default {
+  border-color: #2962ff;
+  color: #2962ff;
 }
 /*# sourceMappingURL=input.css.map */

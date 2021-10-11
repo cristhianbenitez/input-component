@@ -49,3 +49,8 @@ body {
 .grey-text {
   color: #828282;
 }
+
+.active-error {
+  border-color: #333333;
+  color: #333333;
+}
