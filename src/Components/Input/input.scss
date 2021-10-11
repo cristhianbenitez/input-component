@@ -1,6 +1,7 @@
 input {
   border: none;
   font-family: 'Noto Sans JP', sans-serif;
+  text-transform: capitalize;
   &:hover,
   &:focus {
     outline: none;
@@ -10,9 +11,7 @@ label {
   font-family: 'Noto Sans JP', sans-serif;
   font-size: 0.75rem;
 }
-label:hover {
-  color: #2962ff;
-}
+
 .input-element {
   border: 1px solid #828282;
   box-sizing: border-box;
@@ -21,6 +20,7 @@ label:hover {
   width: fit-content;
   margin-top: 0.25em;
   font-family: 'Noto Sans JP', sans-serif;
+
   &:hover {
     border-color: #333333;
   }
@@ -32,10 +32,28 @@ label:hover {
 .error {
   border-color: #d32f2f;
   color: #d32f2f;
+
   &:hover {
     border-color: #333333;
   }
   &:focus-within {
     border-color: #d32f2f;
+  }
+  &:focus-within + label {
+    color: #d32f2f;
+  }
+}
+
+.disabled {
+  border-color: #e0e0e0;
+  background-color: #f2f2f2;
+  &:hover,
+  &:focus-within {
+    border-color: #e0e0e0;
+    background-color: #f2f2f2;
+  }
+  &input:disabled {
+    outline: none;
+    background-color: #f2f2f2;
   }
 }
